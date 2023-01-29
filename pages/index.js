@@ -11,7 +11,7 @@ const Index = ({posts}) => {
     return (
       <div className="">
         <Head>
-          <title>Hi. I'm Will</title>
+          <title>Will King | Digital Performance Marketing Consultant From the Midlands</title>
           <script src="https://kit.fontawesome.com/282cc12568.js" crossorigin="anonymous"></script>
         </Head>
         <div className="md:flex mb-4">
