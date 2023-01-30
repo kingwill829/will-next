@@ -6,14 +6,15 @@ import groq from 'groq'
 import client from '../client'
 import Head from 'next/head'
 import Date from '../components/Date'
+import { NextSeo } from 'next-seo';
 
 const Index = ({posts}) => {
     return (
       <div className="">
-        <Head>
-          <title>Will King | Digital Performance Marketing Consultant From the Midlands</title>
-          <script src="https://kit.fontawesome.com/282cc12568.js" crossorigin="anonymous"></script>
-        </Head>
+        <NextSeo
+          title="Will King | Digital Performance Marketing Consultant From the Midlands"
+          description="A short description goes here."
+        />
         <div className="md:flex mb-4">
           <div className="md:w-2/4">
             <h1>Hi.</h1>

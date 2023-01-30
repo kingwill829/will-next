@@ -7,6 +7,7 @@ import client from '../../client'
 import Head from 'next/head'
 import Link from 'next/link'
 import Date from '../../components/Date'
+import { NextSeo } from 'next-seo';
 
 function urlFor (source) {
   return imageUrlBuilder(client).image(source)
@@ -32,6 +33,7 @@ const ptComponents = {
 const Post = ({post}) => {
   const {
     title = 'Missing title',
+    description = "Missing description",
     name = 'Missing name',
     categories,
     authorImage,
@@ -40,9 +42,10 @@ const Post = ({post}) => {
   } = post
   return (
     <div>
-      <Head>
-        <title>{title}</title>
-      </Head>
+      <NextSeo
+          title={title}
+          description={description}
+        />
       <article>
         <div className='mb-4'>
           <h1>{title}</h1>
@@ -71,6 +74,7 @@ const Post = ({post}) => {
 
 const query = groq`*[_type == "post" && slug.current == $slug][0]{
   title,
+  description,
   "name": author->name,
   "categories": categories[]->title,
   "authorImage": author->image,
