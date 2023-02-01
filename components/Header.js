@@ -4,8 +4,8 @@ import Navbar from './Navbar'
 
 export default function Header() {
   return (
-    <div className="header bg-[#890C3B] text-[#efefef] mb-4">
-      <div className="content md:w-3/5 mx-0 mx-auto flex justify-between items-center p-4">
+    <div className="header bg-[#890C3B] text-[#efefef]">
+      <div className="content p-4 text-center">
         <Link href="/" className='text-[#efefef]'>
           WILL KING DIGITAL
         </Link>

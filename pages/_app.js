@@ -3,9 +3,11 @@ import Layout from "../components/Layout";
 import { DefaultSeo } from 'next-seo';
 import { useRouter } from 'next/router'
 import Script from 'next/script'
+import { Inter } from '@next/font/google'
 
+const inter = Inter({ subsets: ['latin'] })
 
-function MyApp({Component, pageProps}) {
+export default function MyApp({ Component, pageProps }) {
     const router = useRouter();
     const canonicalUrl = (`https://willkingdigital.co.uk` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
     return (
@@ -20,6 +22,4 @@ function MyApp({Component, pageProps}) {
             <Component {...pageProps} />
         </Layout>
     )
-}
-
-export default MyApp;
+  }

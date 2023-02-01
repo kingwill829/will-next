@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <div className="footer text-[#BCA9B0] bg-[#efefef] mt-4 p-2">
-      <div className='w-4/5 md:w-3/5 mx-0 mx-auto '>
+    <div className="footer text-[#BCA9B0] bg-[#efefef] mt-4 p-2 text-center">
+      <div className=''>
         <Link href="https://www.linkedin.com/in/willking829/">
           <i className="fa-brands fa-linkedin text-3xl pr-2"></i>
         </Link>  

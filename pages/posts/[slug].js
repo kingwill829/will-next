@@ -41,15 +41,17 @@ const Post = ({post}) => {
     publishedAt = ''
   } = post
   return (
-    <div>
+    <div className='post'>
       <NextSeo
           title={title}
           description={description}
         />
       <article>
-        <div className='mb-4'>
-          <h1>{title}</h1>
-          <span>By {name} on <Date dateString={publishedAt} /></span>
+        <div className='mb-4 bg-[#f5f5f5] min-h-[200px] flex'>
+          <div className='w-4/5 m-auto p-4 text-center'>
+            <h1>{title}</h1>
+            <span>By {name} on <Date dateString={publishedAt} /></span>
+          </div>
         </div>
 
         {authorImage && (
@@ -62,10 +64,12 @@ const Post = ({post}) => {
             />
           </div>
         )}
-        <PortableText
-          value={body}
-          components={ptComponents}
-        />
+        <div className='w-4/5 sm:w-2/3	md:w-1/2 m-auto'>
+          <PortableText
+            value={body}
+            components={ptComponents}
+          />
+        </div>
       </article>
     </div>
 
