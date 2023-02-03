@@ -40,7 +40,7 @@ const Post = ({post}) => {
     body = [],
     publishedAt = ''
   } = post
-  return (
+  return ( 
     <div className='post'>
       <NextSeo
           title={title}

@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 import Script from 'next/script'
 import { Inter } from '@next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] }) 
 
 export default function MyApp({ Component, pageProps }) {
     const router = useRouter();

@@ -3,7 +3,7 @@ import { Inter } from '@next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-function Content({children}) {
+function Content({children}) { 
   return (
     <main className='content'>
         {children}

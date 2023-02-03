@@ -21,7 +21,7 @@ const Index = ({posts}) => {
             alt="Will King"
             className='rounded-[50%] absolute mx-auto inset-x-0	text-center top-[28px] border-8	border-white'
           />
-        </div> 
+        </div>
         <div className="mb-4 w-4/5 sm:w-2/3	md:w-1/2 m-auto">
           <div className="text-center mb-4">
             <h1 className="text-center">Hi.</h1>
