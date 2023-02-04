@@ -8,9 +8,15 @@ import Head from 'next/head'
 import Date from '../components/Date'
 import { NextSeo } from 'next-seo';
 
+import { Oswald } from '@next/font/google'
+import { Quicksand } from '@next/font/google'
+
+const oswald = Oswald({ subsets: ['latin'] }) 
+const quicksand = Quicksand({ subsets: ['latin'] }) 
+
 const Index = ({posts}) => {
     return (
-      <div className="">
+      <div>
         <NextSeo
           title="Will King | Digital Performance Marketing Consultant From the Midlands"
           description="A short description goes here."
@@ -39,7 +45,7 @@ const Index = ({posts}) => {
               ({ _id, title = '', slug = '', publishedAt = '', description = '' }) =>
                 slug && (
                   <li key={_id} className="list-none mb-8">
-                    <Link className="" href="/posts/[slug]" as={`/posts/${slug.current}`}>
+                    <Link className="text-[1.618rem]" href="/posts/[slug]" as={`/posts/${slug.current}`}>
                       {title}
                     </Link>
                     <span className='block text-slate-400 italic'><Date dateString={publishedAt} /></span>
