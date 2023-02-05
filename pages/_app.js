@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import { DefaultSeo } from 'next-seo';
 import { useRouter } from 'next/router'
 import Script from 'next/script'
+import Head from 'next/head';
+
 
 import { Oswald } from '@next/font/google'
 import { Quicksand } from '@next/font/google'
@@ -15,6 +17,9 @@ export default function MyApp({ Component, pageProps }) {
     const canonicalUrl = (`https://willkingdigital.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
     return (
         <Layout>
+            <Head>
+                <link rel="shortcut icon" href="/favicon.ico" />
+            </Head>
             <style jsx global>{`
                 html {
                     font-family: ${quicksand.style.fontFamily};

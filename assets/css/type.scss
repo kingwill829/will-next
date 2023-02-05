@@ -26,6 +26,6 @@ p:last-child {
 a {
     color:$blue;
 }
-a:hover {
+a:hover, p a {
     text-decoration: underline;
 }
