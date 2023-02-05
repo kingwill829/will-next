@@ -25,6 +25,7 @@ const Index = ({posts}) => {
          <Image 
             src={profilePic}
             alt="Will King"
+            priority
             className='rounded-[50%] absolute mx-auto inset-x-0	text-center top-[28px] border-8	border-white'
           />
         </div>
