@@ -12,10 +12,9 @@ const quicksand = Quicksand({ subsets: ['latin'] })
 
 export default function MyApp({ Component, pageProps }) {
     const router = useRouter();
-    const canonicalUrl = (`https://willkingdigital.co.uk` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
+    const canonicalUrl = (`https://willkingdigital.com` + (router.asPath === "/" ? "": router.asPath)).split("?")[0];
     return (
         <Layout>
-   
             <style jsx global>{`
                 html {
                     font-family: ${quicksand.style.fontFamily};
