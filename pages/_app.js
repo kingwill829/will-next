@@ -32,6 +32,34 @@ export default function MyApp({ Component, pageProps }) {
                 src="https://kit.fontawesome.com/282cc12568.js"
                 crossorigin="anonymous" 
             />
+            <Script
+                src="https://www.googletagmanager.com/gtag/js?id=G-W7RQKW2500"
+                strategy="afterInteractive"
+            />
+            <Script
+                src="https://www.googletagmanager.com/gtag/js?id=UA-256403246-1"
+                strategy="afterInteractive"
+            />
+            <Script id="google-analytics4" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', 'G-W7RQKW2500');
+                `}
+            </Script>
+
+            <Script id="google-analytics" strategy="afterInteractive">
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+
+                        gtag('config', 'UA-256403246-1');
+                `}
+            </Script>
+
             <DefaultSeo
                 canonical={canonicalUrl}
             />
