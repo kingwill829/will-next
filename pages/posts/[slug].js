@@ -8,6 +8,8 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Date from '../../components/Date'
 import { NextSeo } from 'next-seo';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+
 
 function urlFor (source) {
   return imageUrlBuilder(client).image(source)
@@ -26,7 +28,15 @@ const ptComponents = {
           src={urlFor(value).width(320).height(240).fit('max').auto('format')}
         />
       )
-    }
+    },
+    myCodeField: (props) => {
+      return (
+          <SyntaxHighlighter 
+              language={props.value.language}>
+              {props.value.code}
+          </SyntaxHighlighter>
+      )
+    },
   }
 }
 

@@ -19,7 +19,7 @@ const Index = ({posts}) => {
       <div>
         <NextSeo
           title="Will King | Digital Performance Marketing Consultant From the Midlands"
-          description="A short description goes here."
+          description="Personal website for ecommerce and marketing strategy consultant Will King."
         />
         <div className='bg-[#f5f5f5] h-[200px] relative mb-[100px]'>
          <Image 

@@ -31,6 +31,7 @@ export default function MyApp({ Component, pageProps }) {
             <Script 
                 src="https://kit.fontawesome.com/282cc12568.js"
                 crossorigin="anonymous" 
+                strategy="afterInteractive"
             />
             <Script
                 src="https://www.googletagmanager.com/gtag/js?id=G-W7RQKW2500"
